@@ -583,7 +583,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-      <p>MAVERICS © 2024 GeekMAN</p>
+      <p>© 2024 GeekMAN App</p>
     </div>
     """,
     unsafe_allow_html=True
