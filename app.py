@@ -19,7 +19,7 @@ def inject_custom_css():
         #MainMenu {
           visibility: hidden;
         }
-        #GithubIcon {
+        header {
           visibility: hidden;
         }
     </style>
