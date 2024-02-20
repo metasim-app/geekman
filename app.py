@@ -533,9 +533,10 @@ def display_first_option():
 # Function to display UI for the "second" option
 def display_second_option():
     url = 'https://github.com/mrayhanulmasud/geekman/blob/main/data/test.csv'
-    
-    uploaded_file = st.file_uploader("**Upload a CSV file with list of username pairs**", type="csv")
-    st.link_button("**Example file format**", f"{url}")
+   
+    st.write("**Upload a CSV file with list of username pairs**")
+    st.page_link(f"{url}", label="**Example file format**")
+    uploaded_file = st.file_uploader("**Upload a CSV file*", type="csv")
     if uploaded_file is not None:
 #         df = pd.read_csv(uploaded_file)
         try:
