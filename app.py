@@ -3,23 +3,6 @@ import streamlit as st
 # Set the page layout
 st.set_page_config(page_title="GeekMAN", layout="centered")
 
-# # Inject custom CSS
-# def inject_custom_css():
-#     custom_css = """
-#     <style>
-#         /* Target the text input directly */
-#         .stTextInput>div>div>input {
-#             background-color: #dbdce4; /* Background color */
-#             font-weight: bold;
-#         }
-#         .stButton>button {
-#             background-color: #dbdce4;
-            
-#         }
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
-
 # inject_custom_css()
 
 ####################
@@ -40,7 +23,7 @@ import time
 
 
 # dictionary file path
-dictionary_filepath = 'resources/curated_word_list.txt'
+dictionary_filepath = 'curated_word_list.txt'
 username_1, username_2 = 'username_1', 'username_2'
 sim_score = 'sim_score'
 
