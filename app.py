@@ -3,6 +3,30 @@ import streamlit as st
 # Set the page layout
 st.set_page_config(page_title="GeekMAN", layout="centered")
 
+# Inject custom CSS
+def inject_custom_css():
+    custom_css = """
+    <style>
+        /* Target the text input directly 
+        .stTextInput>div>div>input {
+            background-color: #dbdce4; /* Background color 
+            font-weight: bold;
+        }
+        .stButton>button {
+            background-color: #dbdce4;
+            
+        }*/
+        #MainMenu {
+          visibility: hidden;
+        }
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
+
+inject_custom_css()
+
+
+
 # inject_custom_css()
 
 ####################
@@ -583,7 +607,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-      <p>© 2024 GeekMAN App</p>
+      <p>2024 GeekMAN App</p>
     </div>
     """,
     unsafe_allow_html=True
