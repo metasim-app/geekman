@@ -535,8 +535,8 @@ def display_second_option():
     url = 'https://github.com/mrayhanulmasud/geekman/blob/main/data/test.csv'
    
     st.write("**Upload a CSV file with list of username pairs**")
-    st.page_link(f"{url}", label="**Example file format**")
-    uploaded_file = st.file_uploader("**Upload a CSV file*", type="csv")
+    st.page_link(f"{url}", label="**Example file format**", icon="🔗")
+    uploaded_file = st.file_uploader("**Upload a CSV file**", type="csv")
     if uploaded_file is not None:
 #         df = pd.read_csv(uploaded_file)
         try:
