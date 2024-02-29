@@ -584,7 +584,7 @@ def display_second_option():
             st.write("### Exception occured !! Please try again.")
 
 # Header and Footer
-st.header("GeekMAN - Geek Oriented Username Matching across Online Networks")
+st.header("Disambiguating usernames across platforms: the GeekMAN approach")
 tab1, tab2 = st.tabs([f"**Regular Search**", "**File Upload**"])
 
 with tab1:
