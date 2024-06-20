@@ -1,1 +1,2 @@
-py-stringmatching
+numpy==1.26.4
+py_stringmatching==0.4.5
