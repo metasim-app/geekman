@@ -652,10 +652,8 @@ st.markdown(
     </style>
     <div class="footer">
       <p>2024 GeekMAN App</p></br>
-      <p>Lab Website Link: https://maverics.cs.ucr.edu </p></br>
-      <p> For questions and more information please contact our leading graduate researchers below. </p></br>
-      <p>M.R. Masud at mmasu012@ucr.edu</p></br>
-      <p>Ben Treves at btrev003@ucr.edu</p></br>
+      <p>Lab Website Link: https://maverics.cs.ucr.edu </p>
+      <p>For questions and more information please contact our leading graduate researchers: M.R. Masud at (mmasu012@ucr.edu) Ben Treves at (btrev003@ucr.edu)</p>
     </div>
     """,
     unsafe_allow_html=True
