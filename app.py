@@ -613,13 +613,13 @@ def display_third_option():
     if st.button("Show Citation"):
         st.text_area("Citation in BibTeX format", bibtex, height=200)
     
-    # Button to copy the BibTeX to clipboard (requires a frontend trick)
-    st.write("""
-        <button onclick="navigator.clipboard.writeText(bibtex)">Copy to Clipboard</button>
-        <script>
-            var bibtex = `""" + bibtex + """`;
-        </script>
-        """, unsafe_allow_html=True)
+    # # Button to copy the BibTeX to clipboard (requires a frontend trick)
+    # st.write("""
+    #     <button onclick="navigator.clipboard.writeText(bibtex)">Copy to Clipboard</button>
+    #     <script>
+    #         var bibtex = `""" + bibtex + """`;
+    #     </script>
+    #     """, unsafe_allow_html=True)
     
 # Header and Footer
 st.header("Disambiguating usernames across platforms: the GeekMAN approach")
@@ -651,9 +651,8 @@ st.markdown(
     }
     </style>
     <div class="footer">
-      <p>2024 GeekMAN App</p></br>
-      <p>Lab Website Link: https://maverics.cs.ucr.edu </p>
-      <p>For questions and more information please contact our leading graduate researchers: M.R. Masud at (mmasu012@ucr.edu) Ben Treves at (btrev003@ucr.edu)</p>
+      <p>2024 GeekMAN App</p>
+      <p>Lab Website Link: https://maverics.cs.ucr.edu For questions and more information please contact our leading graduate researchers: M.R. Masud at (mmasu012@ucr.edu) Ben Treves at (btrev003@ucr.edu)</p>
     </div>
     """,
     unsafe_allow_html=True
