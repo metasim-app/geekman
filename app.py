@@ -583,15 +583,56 @@ def display_second_option():
             print(e)
             st.write("### Exception occured !! Please try again.")
 
+def display_third_option():
+
+    # Example BibTeX entry
+    bibtex = """
+    @article{masud2024disambiguating,
+      title={Disambiguating usernames across platforms: the GeekMAN approach},
+      author={Masud, Md Rayhanul and Treves, Ben and Faloutsos, Michalis},
+      journal={Social Network Analysis and Mining},
+      volume={14},
+      number={1},
+      pages={177},
+      year={2024},
+      publisher={Springer}
+    }
+
+    @inproceedings{masud2023geekman,
+      title={GeekMAN: Geek-oriented username matching across online networks},
+      author={Masud, Md Rayhanul and Treves, Ben and Faloutsos, Michalis},
+      booktitle={Proceedings of the International Conference on Advances in Social Networks Analysis and Mining},
+      pages={305--309},
+      year={2023}
+    }
+    """
+    
+    # st.title("BibTeX Citation Example")
+
+    # Show BibTeX entry in a text area
+    if st.button("Show Citation"):
+        st.text_area("Citation in BibTeX format", bibtex, height=200)
+    
+    # Button to copy the BibTeX to clipboard (requires a frontend trick)
+    st.write("""
+        <button onclick="navigator.clipboard.writeText(bibtex)">Copy to Clipboard</button>
+        <script>
+            var bibtex = `""" + bibtex + """`;
+        </script>
+        """, unsafe_allow_html=True)
+    
 # Header and Footer
 st.header("Disambiguating usernames across platforms: the GeekMAN approach")
-tab1, tab2 = st.tabs([f"**Regular Search**", "**File Upload**"])
+tab1, tab2 = st.tabs([f"**Regular Search**", "**File Upload**", "**Cite This Work**"])
 
 with tab1:
    display_first_option()
 
 with tab2:
    display_second_option()
+
+with tab3:
+    display_third_option()
 
 # Footer
 # Use markdown with unsafe_allow_html=True to render HTML
@@ -610,7 +651,11 @@ st.markdown(
     }
     </style>
     <div class="footer">
-      <p>2024 GeekMAN App</p>
+      <p>2024 GeekMAN App</p></br>
+      <p>Lab Website Link: https://maverics.cs.ucr.edu </p></br>
+      <p> For questions and more information please contact our leading graduate researchers below. </p></br>
+      <p>M.R. Masud at mmasu012@ucr.edu</p></br>
+      <p>Ben Treves at btrev003@ucr.edu</p></br>
     </div>
     """,
     unsafe_allow_html=True
