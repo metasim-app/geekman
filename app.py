@@ -623,7 +623,7 @@ def display_third_option():
     
 # Header and Footer
 st.header("Disambiguating usernames across platforms: the GeekMAN approach")
-tab1, tab2 = st.tabs([f"**Regular Search**", "**File Upload**", "**Cite This Work**"])
+tab1, tab2, tab3 = st.tabs([f"**Regular Search**", "**File Upload**", "**Cite This Work**"])
 
 with tab1:
    display_first_option()
